@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdulmalik Umar Maje | Tech, AI & Growth</title>
+<meta name="description" content="Tech specialist at Yandex, AI/ML and growth marketer, writer, and community builder from Kano, Nigeria.">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#12141c;--mut:#5b6174;--line:#e3e6ef;--acc:#4f46e5;--acc2:#06b6d4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0d14;--card:#141825;--ink:#eef0f8;--mut:#9aa1b8;--line:#232a3d;--acc:#818cf8;--acc2:#22d3ee}}
+:root[data-theme="dark"]{--bg:#0b0d14;--card:#141825;--ink:#eef0f8;--mut:#9aa1b8;--line:#232a3d;--acc:#818cf8;--acc2:#22d3ee}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+nav b{font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:-.5px}
+nav b span{color:var(--acc)}
+.links{display:flex;gap:18px;font-size:14px;color:var(--mut);overflow-x:auto}
+.links a:hover{color:var(--acc)}
+@media(max-width:640px){.links a:nth-child(n+4){display:none}}
+.hero{padding:76px 0 56px;position:relative}
+.hero:before{content:"";position:absolute;inset:-60px -20px auto auto;width:420px;height:420px;background:radial-gradient(circle,var(--acc) 0,transparent 65%);opacity:.18;filter:blur(30px);pointer-events:none}
+.tag{display:inline-flex;gap:8px;align-items:center;font:13px ui-monospace,Menlo,monospace;color:var(--acc);border:1px solid var(--line);background:var(--card);padding:6px 12px;border-radius:99px}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(38px,8vw,72px);line-height:1.05;margin:22px 0 14px;letter-spacing:-2px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(17px,2.4vw,20px);color:var(--mut);max-width:640px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:12px 20px;border-radius:12px;font-weight:600;border:1px solid var(--line);background:var(--card);transition:.2s}
+.btn.p{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#fff;border:0}
+.btn:hover{transform:translateY(-2px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat b{display:block;font-size:26px;letter-spacing:-1px}
+.stat span{color:var(--mut);font-size:14px}
+section{padding:56px 0}
+.k{font:13px ui-monospace,Menlo,monospace;color:var(--acc);text-transform:uppercase;letter-spacing:2px}
+h2{font-size:clamp(28px,5vw,40px);margin:8px 0 28px;letter-spacing:-1px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.25s;display:block}
+a.card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.pill{display:inline-block;font:12px ui-monospace,Menlo,monospace;color:var(--acc);background:color-mix(in srgb,var(--acc) 12%,transparent);padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.about p{color:var(--mut);margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:7px 13px;border-radius:99px;font-size:14px}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.tl div{position:relative;padding:0 0 22px 22px}
+.tl div:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.tl b{display:block}.tl span{color:var(--mut);font-size:15px}
+.cta{text-align:center;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border-radius:24px;padding:48px 20px}
+.cta h2{margin-top:0}.cta .btn{background:#fff;color:#12141c;border:0}
+footer{padding:30px 0;color:var(--mut);font-size:14px;text-align:center}
+.t{background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:6px 10px;cursor:pointer;margin-left:12px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>maje<span>.dev</span></b><div style="display:flex;align-items:center"><div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#writing">Writing</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><button class="t" id="th" aria-label="Toggle theme">◐</button></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="tag"><i class="dot"></i> Open to collaborations</span>
+<h1>Hi, I'm Abdulmalik Umar Maje.<br>I build with <em>tech, AI & community.</em></h1>
+<p class="lead">I work as a tech specialist at Yandex, write content for an Indian company, and work in growth marketing and AI. I co-founded AspireNet Africa and have led a group of over 500 students in learning practical tech skills.</p>
+<div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="mailto:aumaje011@gmail.com">Get in touch</a></div>
+<div class="stats"><div class="stat"><b>Yandex</b><span>Current tech role</span></div><div class="stat"><b>500+</b><span>Students taught tech skills</span></div><div class="stat"><b>50+</b><span>Certificates earned</span></div><div class="stat"><b>3</b><span>Languages: English, Hausa, Arabic</span></div></div>
+</div></header>
+
+<section id="about"><div class="wrap"><div class="k">About</div><h2>Technology that serves people</h2>
+<div class="about"><div>
+<p>I work at the meeting point of technology, marketing and community. Day to day that means analytics, automation and lead generation, alongside writing for an Indian company as a content writer and following the fast-moving world of AI and machine learning.</p>
+<p>I am chief editor of ForensicField.blog, and I co-founded AspireNet Africa, a community development venture in Kano. I enjoy teaching, and I recently led a group of more than 500 students through practical tech skills. I believe skills are most useful when they open doors for other people.</p>
+<p>I also write on Substack about books, philosophy, psychology and self-growth.</p></div>
+<div class="tl">
+<div><b>Tech Specialist, Yandex</b><span>Ongoing</span></div>
+<div><b>Content Writer</b><span>Indian company, ongoing</span></div>
+<div><b>Co-founder, AspireNet Africa</b><span>Kano, Nigeria</span></div>
+<div><b>Chief Editor, ForensicField.blog</b><span>Forensic science education</span></div>
+<div><b>Tech Skills Lead</b><span>Taught a group of 500+ students</span></div><div><b>Aspire Leaders Program</b><span>Aspire Institute, Harvard University; later a cohort moderator</span></div></div></div></div></section>
+
+<section id="work"><div class="wrap"><div class="k">Selected work</div><h2>Projects with a purpose</h2>
+<div class="grid">
+<a class="card" href="https://msd-global-ventures-eight.vercel.app/"><span class="pill">Trade · Web</span><h3>MSD Global Ventures</h3><p>Export and sourcing platform connecting buyers worldwide with Nigerian ginger, moringa, roselle, gum arabic and soybeans, built with a clear quote-request flow.</p></a>
+<div class="card"><span class="pill">Social venture</span><h3>AspireNet Africa</h3><p>Community development venture based in Kano, focused on skills, opportunity and leadership for young people.</p></div>
+<div class="card"><span class="pill">EdTech</span><h3>BridgeClass</h3><p>A technology-powered community learning initiative for out-of-school youth in Kano.</p></div>
+<div class="card"><span class="pill">Teaching</span><h3>Tech Skills for 500+ Students</h3><p>I led and taught a large student group, helping them build practical digital skills they can use for study and work.</p></div>
+<div class="card"><span class="pill">Leadership</span><h3>Aspire Leaders Program</h3><p>Completed the global leadership program of the Aspire Institute at Harvard University, then supported the second cohort as a moderator.</p></div>
+<a class="card" href="https://forensicfield.blog/"><span class="pill">Research · Editorial</span><h3>ForensicField.blog</h3><p>Educational forensic science publishing, from art forgery detection to burn pattern analysis.</p></a>
+<a class="card" href="https://substack.com/@maje011"><span class="pill">Newsletter</span><h3>MajeAI on Substack</h3><p>Essays on books, philosophy, psychology and self-growth, written in public as a habit.</p></a>
+<div class="card"><span class="pill">Daily series</span><h3>Meditations Reflections</h3><p>A daily written reflection on Marcus Aurelius, started on 1 October 2026, to show consistency over weeks, not days.</p></div>
+</div></div></section>
+
+<section id="writing"><div class="wrap"><div class="k">Writing</div><h2>Ideas worth sharing</h2>
+<div class="grid">
+<a class="card" href="https://forensicfield.blog/art-forgery-understanding-and-detecting-counterfeit-artworks/"><h3>Art Forgery Detection</h3><p>Pigment analysis and provenance tracking used to expose counterfeit artworks.</p></a>
+<a class="card" href="https://forensicfield.blog/burn-pattern-analysis/"><h3>Burn Pattern Analysis</h3><p>How fire patterns are read in forensic investigations.</p></a>
+<a class="card" href="https://substack.com/@maje011"><h3>Essays on Substack</h3><p>Islam, books, psychology and philosophy, with reflections on what I'm learning.</p></a>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="k">Skills</div><h2>What I bring</h2>
+<div class="chips"><span>AI & ML fundamentals</span><span>Media advertising</span><span>Lead generation</span><span>Marketing automation</span><span>Google Analytics</span><span>Excel & Tableau</span><span>AWS / Azure basics</span><span>Content writing</span><span>Research blogging</span><span>Web publishing</span><span>Community leadership</span><span>Hausa · English · Arabic</span></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><h2>Let's build something useful</h2><p>Open to collaborations in tech, AI, content and community impact.</p>
+<div class="btns" style="justify-content:center"><a class="btn" href="mailto:aumaje011@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/abdulmalik-umar-maje-0232a525b">LinkedIn</a><a class="btn" href="https://github.com/abdulmalikmaje2019">GitHub</a><a class="btn" href="https://substack.com/@maje011">Substack</a></div></div></div></section>
+<footer>© 2026 Abdulmalik Umar Maje · Kano, Nigeria</footer>
+<script>
+var b=document.getElementById('th');b.onclick=function(){var r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim()==='#0b0d14';r.setAttribute('data-theme',d?'light':'dark');try{localStorage.setItem('th',d?'light':'dark')}catch(e){}};
+try{var s=localStorage.getItem('th');if(s)document.documentElement.setAttribute('data-theme',s)}catch(e){}
+</script>
+</body>
+</html>
